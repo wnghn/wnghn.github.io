@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[王晗 Han Wang's Blog]]></title>
   <link href="http://wnghn.github.io/atom.xml" rel="self"/>
   <link href="http://wnghn.github.io/"/>
-  <updated>2013-08-19T20:09:21+02:00</updated>
+  <updated>2013-08-19T21:15:09+02:00</updated>
   <id>http://wnghn.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[WANG Han]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World!]]></title>
+    <link href="http://wnghn.github.io/blog/2013/08/19/hello-world/"/>
+    <updated>2013-08-19T20:52:00+02:00</updated>
+    <id>http://wnghn.github.io/blog/2013/08/19/hello-world</id>
+    <content type="html"><![CDATA[<p>学得快，忘得更快，对我这种人技术博客实在是太重要了。亡羊补牢 犹未为晚，先把逝去的羊们一个一个找回来吧!
+技术文章用英文，其他中文，就这样。</p>
+]]></content>
+  </entry>
   
 </feed>
