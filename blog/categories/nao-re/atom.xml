@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[王晗 Han Wang's Blog]]></title>
-  <link href="http://wnghn.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 脑热 | 王晗 Han Wang's Blog]]></title>
+  <link href="http://wnghn.github.io/blog/categories/nao-re/atom.xml" rel="self"/>
   <link href="http://wnghn.github.io/"/>
   <updated>2013-08-19T22:09:17+02:00</updated>
   <id>http://wnghn.github.io/</id>
