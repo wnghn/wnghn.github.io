@@ -2,18 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://wnghn.github.io/blog/2013/08/19/hello-world/</loc>
-        <lastmod>2013-08-19T21:13:52+02:00</lastmod>
+        <lastmod>2013-08-19T21:46:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://wnghn.github.io/robots.txt</loc>
         <lastmod>2013-08-19T20:08:41+02:00</lastmod>
     </url>
     <url>
+        <loc>http://wnghn.github.io/search.html</loc>
+        <lastmod>2013-08-19T21:46:31+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://wnghn.github.io/</loc>
-        <lastmod>2013-08-19T21:13:52+02:00</lastmod>
+        <lastmod>2013-08-19T21:46:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://wnghn.github.io/blog/archives/</loc>
-        <lastmod>2013-08-19T21:13:52+02:00</lastmod>
+        <lastmod>2013-08-19T21:46:31+02:00</lastmod>
     </url>
 </urlset>
