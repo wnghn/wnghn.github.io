@@ -3,10 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Blog Archives - 王晗 Han Wang's Blog</title>
+	<title>Rake Aborted Error When Running Rake Generate after Ubuntu Reboot - 王晗 Han Wang's Blog</title>
     <meta name="author" content="WANG Han">
     
-	<meta name="description" content=" 2013 Rake Aborted Error When Running Rake Generate After Ubuntu Reboot Aug 20 Octopress Hello World! Aug 19 脑热 ">
+	<meta name="description" content="The Octopress blog environment was setup yesterday in my laptop and it ran quite well. But when I ran rake generate this morning after booting my &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -78,47 +78,46 @@
 <div id="toload">
 <!-- begin toload --> 
     <div id="content" class="inner">
-        
+        <article class="post">
+	<h2 class="title">Rake Aborted Error When Running Rake Generate After Ubuntu Reboot</h2>
+	<div class="entry-content"><p>The Octopress blog environment was setup yesterday in my laptop and it ran quite well. But when I ran <code>rake generate</code> this morning after booting my Ubuntu, the following error message appeared:</p>
+
+<blockquote><p>rake aborted!
+cannot load such file &mdash; bundler/setup</p></blockquote>
+
+<p>I googled and thought it was due to incorrect version settings of ruby or kramdown.  But the command to reset global ruby verison <code>rbenv global 1.9.3-p0</code>
+gave me the following message:</p>
+
+<blockquote><p>The program &lsquo;rbenv&rsquo; is currently not installed.  You can install it by typing:
+sudo apt-get install rbenv</p></blockquote>
+
+<p>This time I found the correct <strong>SOLUTION</strong> suggested in <a href="https://github.com/sstephenson/rbenv/issues/424">Ubuntu &ndash; The program &lsquo;rbenv&rsquo; is currently not installed. You can install it by typing: sudo apt-get install rbenv</a>,
+which is</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>source ~/.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+<p>in my case, since that&rsquo;s where the path to rbenv is included by environment variables during my installation of rbenv. To see why <code>~/.bash_profile</code> is not automatically sourced in Ubuntu, have a look at <a href="http://askubuntu.com/questions/121073/why-bash-profile-is-not-getting-sourced-when-opening-a-terminal">Why ~/.bash_profile is not getting sourced when opening a terminal?</a>.</p>
+</div>
+
+<div class="meta">
 	
-
-
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article>
-  <h2 class="title"><a href="/blog/2013/08/20/rake-aborted-error-when-running-rake-generate-after-ubuntu-reboot/">Rake Aborted Error When Running Rake Generate After Ubuntu Reboot</a></h2>
-	<div class="meta">
-		<span class="date">Aug 20</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/octopress/'>Octopress</a>
-
-
-</span>
-	    
-	</div>
+</div>
 </article>
 
-
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/08/19/hello-world/">Hello World!</a></h2>
-	<div class="meta">
-		<span class="date">Aug 19</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/nao-re/'>脑热</a>
-
-
-</span>
-	    
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-</article>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
 
 
     </div>
