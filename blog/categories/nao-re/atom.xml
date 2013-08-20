@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 脑热 | 王晗 Han Wang's Blog]]></title>
+  <link href="http://wnghn.github.io/blog/categories/nao-re/atom.xml" rel="self"/>
+  <link href="http://wnghn.github.io/"/>
+  <updated>2013-08-20T13:51:32+02:00</updated>
+  <id>http://wnghn.github.io/</id>
+  <author>
+    <name><![CDATA[WANG Han]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World!]]></title>
+    <link href="http://wnghn.github.io/blog/2013/08/19/hello-world/"/>
+    <updated>2013-08-19T20:52:00+02:00</updated>
+    <id>http://wnghn.github.io/blog/2013/08/19/hello-world</id>
+    <content type="html"><![CDATA[<p>对我这种学得快忘得更快的人来说，技术博客实在是太重要了。亡羊补牢，犹未为晚，先把丢掉的羊们一只只找回来吧。技术文章用英文，其他用中文，现在开始！</p>
+]]></content>
+  </entry>
+  
+</feed>
