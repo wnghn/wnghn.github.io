@@ -98,3 +98,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# tapirgo search public token
+tapir_token: 52136b78b406d00100000001
