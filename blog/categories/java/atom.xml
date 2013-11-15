@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Java | 王晗 Han Wang's Blog]]></title>
+  <link href="http://wnghn.github.io/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://wnghn.github.io/"/>
+  <updated>2013-11-15T11:30:35+01:00</updated>
+  <id>http://wnghn.github.io/</id>
+  <author>
+    <name><![CDATA[Han 晗 WANG]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Notes of Java Basics]]></title>
+    <link href="http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics/"/>
+    <updated>2013-10-23T13:39:00+02:00</updated>
+    <id>http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[王晗 Han Wang's Blog]]></title>
   <link href="http://wnghn.github.io/atom.xml" rel="self"/>
   <link href="http://wnghn.github.io/"/>
-  <updated>2013-08-20T15:32:18+02:00</updated>
+  <updated>2013-11-15T11:30:35+01:00</updated>
   <id>http://wnghn.github.io/</id>
   <author>
     <name><![CDATA[Han 晗 WANG]]></name>
@@ -12,6 +12,386 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Course Notes: Data Structures and Algorithms]]></title>
+    <link href="http://wnghn.github.io/blog/2013/10/23/course-notes-data-structures-and-algorithms/"/>
+    <updated>2013-10-23T14:44:00+02:00</updated>
+    <id>http://wnghn.github.io/blog/2013/10/23/course-notes-data-structures-and-algorithms</id>
+    <content type="html"><![CDATA[<h1>Linear Structures</h1>
+
+<h2>Phisical Implementations</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Compare    </th>
+<th align="center">Sequential List</th>
+<th align="center">Linked List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>random access  </td>
+<td align="center">+  </td>
+<td align="center">- |</td>
+</tr>
+<tr>
+<td></td>
+<td>space cost     </td>
+<td align="center">+  </td>
+<td align="center">- |</td>
+</tr>
+<tr>
+<td></td>
+<td>insert/delete  </td>
+<td align="center">- </td>
+<td align="center">+  |</td>
+</tr>
+<tr>
+<td></td>
+<td>flexible length</td>
+<td align="center">- </td>
+<td align="center">+  |</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>Sequential List (Array)</h3>
+
+<ul>
+<li>internal sort
+
+<ul>
+<li>insert sort (stable), bubble sort(stable), selection sort(ustable)</li>
+<li>shell sort(unstable)</li>
+<li>quick sort(unstable), merge sort(stable), heap sort(unstable)</li>
+<li>bucket sort(stable, linear runtime for linear range), radix sort(stable)</li>
+</ul>
+</li>
+<li>binary search</li>
+<li>dynamic programming
+
+<blockquote><ul>
+<li>longest increasing subsequence</li>
+</ul>
+</blockquote></li>
+</ul>
+
+
+<h3>Linked List</h3>
+
+<ul>
+<li><p>traverse two lists</p>
+
+<blockquote><ul>
+<li>merge sorted list</li>
+<li>add two numbers</li>
+</ul>
+</blockquote></li>
+<li><p>fast runner/ slow runner in one List</p>
+
+<blockquote><ul>
+<li>Find the start of a loop</li>
+<li>Find the element right in the middle</li>
+<li>Judge Palindrome</li>
+</ul>
+</blockquote></li>
+</ul>
+
+
+<h2>Abstract Data Structures</h2>
+
+<h3>Stack (LIFO)</h3>
+
+<p>The main operations include <code>push, pop, top</code>. There are two implementations, array-based stacks and linked stacks. In an array-based stack, the problems of overflow and underflow need to be considered due to the fixed array length. In the implementation of linked stacks, a pointer between two node points from top to bottom.</p>
+
+<ul>
+<li><p>calculate arithmetic expressions</p>
+
+<blockquote><ul>
+<li>convert infix expression to postfix expressioin</li>
+<li>calculate value of postfix expression</li>
+</ul>
+</blockquote></li>
+<li><p>given all elements in pushing order, output all the push/pop possibilities</p>
+
+<blockquote><ul>
+<li>Valid parentheses</li>
+</ul>
+</blockquote></li>
+<li><p>substitute recursion (only when recursion is very space-inefficient)</p>
+
+<blockquote><ul>
+<li>Hanoi Tower</li>
+</ul>
+</blockquote></li>
+</ul>
+
+
+<h3>Queue (FIFO)</h3>
+
+<p>The main operations include <code>enqueue, dequeue</code>. Similar to stack, there are two implementations of a queue, array-based queues and linked queues.
+A queues with fixed length can be viewed as a <strong>circular queue</strong>. A typical application is the buffer (data cache area) of emails, requests or messages.</p>
+
+<ul>
+<li>breadth first search</li>
+</ul>
+
+
+<h3>String</h3>
+
+<p>The main operations are <code>append, concatenate, find, substring, compare</code>.</p>
+
+<ul>
+<li>Exact String Matching: Knuth-Morrit-Pratt (KMP)</li>
+<li>Approximate String Matching: Edit Distance (using DP)</li>
+</ul>
+
+
+<h3>Hash Table</h3>
+
+<h1>Tree Structures</h1>
+
+<h2>Binary Tree</h2>
+
+<p>The main operations are <code>left,right</code>. A binary tree can be implemented using either binary linked list (left,right, =and perhaps parent) or array (only for complete binary trees).</p>
+
+<ul>
+<li><p>Depth First Traversal: preorder, inorder and postorder. Each of the order can be implemented with recurrsive OR iterative(stack) method. Note: To implement postorder iteratively, an extra state tag is needed for each tree node.</p>
+
+<blockquote><ul>
+<li>tree height</li>
+<li>whether symmetric or not</li>
+<li>whether balanced/complete/full/perfect or not</li>
+</ul>
+</blockquote></li>
+<li><p>Construct tree from preorder(or postorder) and inorder traversal</p></li>
+<li>Breadth First Traversal. Recursive OR iterative (queue)</li>
+<li>Implement a complete binary tree using array</li>
+</ul>
+
+
+<h3>Binary Search Tree (BST)</h3>
+
+<p>In a BST, the values of node elements are increasing if they are traversed in preorder. A BST can be used to build a tree index.
+&ndash; search/insert node
+&ndash; delete node</p>
+
+<h3>Minimum/Maximum Heap</h3>
+
+<p>In a minimum heap, the value of every node is no greater than either of its direct children.
+&ndash; insert (sift up)
+&ndash; removeMin (sift down)
+&ndash; delete (sift up + sift down)</p>
+
+<h3>Huffman Tree</h3>
+
+<p>Huffman coding is an algorithm for lossless data compression. Each datum (word) is encoded by its prefix code in the huffman tree.
+&ndash; construction of huffman tree (using maximum frequency heap)
+&ndash; encoding/decoding</p>
+
+<h3>Red Black Tree</h3>
+
+<h2>General Trees &amp; Forests</h2>
+
+<p>Common operations for a general tree are <code>LeftMostChild, rightSibling, childrenSet</code>. There are three ways to implement a general tree:</p>
+
+<ol>
+<li>linked list
+
+<ol>
+<li>store the pointers of all children for each node (in an array or linked list)</li>
+<li>maintain two pointers for each node, one to its left most child and the other to its right sibling</li>
+<li>maintain a pointer to the parent of a node</li>
+</ol>
+</li>
+<li>sequential list
+
+<ol>
+<li>root first traversal order, with a pointer to the right sibling in each node</li>
+<li>root first traversal order, with a boolean tag for the existence of sibling in each node</li>
+<li>breath first traversal order, with a pointer to the left most child and a boolean tag for sibling in each node</li>
+<li>root last traversal order, with the degree of each node</li>
+</ol>
+</li>
+</ol>
+
+
+<p>Here are some useful algorithms.</p>
+
+<ul>
+<li>transform a general tree/forest into a binary Tree</li>
+<li>root first traversal (preorder), root last traversal (inorder), breadth first traversal
+
+<blockquote><ul>
+<li>find previous sibling, find parent</li>
+<li>delete a tree</li>
+</ul>
+</blockquote></li>
+</ul>
+
+
+<h3>Disjoint-Set Forests</h3>
+
+<p>In a disjoint-set forest, each tree represents one set. This structure is usuallly implemented in the 1.3 way. A typical application of it is checking equivalence classes. The algorithms adopted for the disjoint-set problem are:</p>
+
+<ul>
+<li>union (two trees). The union follows <strong>weighted union rule</strong></li>
+<li>find (parent) using <strong>path compression</strong></li>
+</ul>
+
+
+<h3>Prefix Tree (Trie)</h3>
+
+<p>A prefix tree is an ordered tree structure where each top-down path is a string. All the descendants of a node have a common prefix.</p>
+
+<blockquote><ul>
+<li>storing a predictive text or autocomplete dictionary</li>
+</ul>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Compare    </th>
+<th align="center">Prefix Tree</th>
+<th align="center">BST</th>
+<th align="center">Hash Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>fuzzy match</td>
+<td align="center">+ </td>
+<td align="center"> </td>
+<td align="center"> - |</td>
+</tr>
+<tr>
+<td></td>
+<td>alphabetical order</td>
+<td align="center">+ </td>
+<td align="center"> </td>
+<td align="center">- |</td>
+</tr>
+<tr>
+<td></td>
+<td>look up time</td>
+<td align="center"> - </td>
+<td align="center"> </td>
+<td align="center">+ |</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>B Tree, B+ Tree</h3>
+
+<p>B(B+) Trees are used for indices.</p>
+
+<h1>Graph Structures</h1>
+
+<p>There are three wasys to implement a graph: objects(vertices and edges), adjacency matrix and adjacency lists.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Compare    </th>
+<th align="center">Objects</th>
+<th align="center">Matrix</th>
+<th align="center">Adjacency Lists</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>OO Programming</td>
+<td align="center">+ </td>
+<td align="center"> - </td>
+<td align="center"> - |</td>
+</tr>
+<tr>
+<td></td>
+<td>dense graphs</td>
+<td align="center"> -</td>
+<td align="center"> + </td>
+<td align="center">- |</td>
+</tr>
+<tr>
+<td></td>
+<td>sparse graphs</td>
+<td align="center"> + </td>
+<td align="center">- </td>
+<td align="center"> + |</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul>
+<li><p>Graph Traversal</p>
+
+<blockquote><ul>
+<li>connectivity (number of components)</li>
+</ul>
+</blockquote>
+
+<ul>
+<li><p>BFS (queue)</p>
+
+<blockquote><ul>
+<li>shortest path in an unweighted graph</li>
+<li>topological sort in an acyclic graph (only push elements with indegree 0)</li>
+</ul>
+</blockquote></li>
+<li><p>DFS (stack)</p></li>
+</ul>
+</li>
+<li><p>Dijkstra (Greedy, single source), Floyd (3-layer iterations, all sources)</p>
+
+<blockquote><ul>
+<li>shortest path in a non-negative weighted graph</li>
+</ul>
+</blockquote></li>
+<li><p>Prim (Greedy, for sparse graphs), Kruskal (class union, for dense graphs)</p>
+
+<blockquote><ul>
+<li>Minimum Spanning Tree (MST)</li>
+</ul>
+</blockquote></li>
+</ul>
+
+
+<h1>If Data can not fit into memory</h1>
+
+<ul>
+<li><p>replacement selection sorting</p>
+
+<blockquote><ul>
+<li>Given memory m, generate a sorted file of size 2m in average.</li>
+</ul>
+</blockquote></li>
+<li><p>external merge sort (2-way, k-way merge with winner tree)</p></li>
+<li><p>block search with index table</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Notes of Java Basics]]></title>
+    <link href="http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics/"/>
+    <updated>2013-10-23T13:39:00+02:00</updated>
+    <id>http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rake Aborted Error When Running Rake Generate after Ubuntu Reboot]]></title>
