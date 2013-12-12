@@ -3,10 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Blog Archives - 王晗 Han Wang's Blog</title>
+	<title>Condensed Notes: OO Design and System Design - 王晗 Han Wang's Blog</title>
     <meta name="author" content="Han 晗 WANG">
     
-	<meta name="description" content="2013 Condensed Notes: Common Java APIs Dec 12 Condensed Notes: Algorithms Dec 12 Condensed Notes: Scalability Dec 12 Condensed Notes: Do You Know &hellip;">
+	<meta name="description" content="OO Design 4 Major Principles Abstraction: decomposing a complex system and hiding the complexity by defining the most semantically appropriate &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -79,152 +79,92 @@
 <div id="toload">
 <!-- begin toload --> 
     <div id="content" class="inner">
-        
+        <article class="post">
+	<h2 class="title">Condensed Notes: OO Design and System Design</h2>
+	<div class="entry-content"><h1>OO Design</h1>
+
+<h2>4 Major Principles</h2>
+
+<ul>
+<li><strong>Abstraction</strong>: decomposing a complex system and hiding the complexity by defining the most semantically appropriate classes (states and behaviors)</li>
+<li><strong>Encapsulation</strong>: hiding data implementation by restricting access to accessor (getter) and
+mutator (setter)</li>
+<li><strong>Inheritance</strong>: the “is a” relationship</li>
+<li><strong>Polymorphism</strong>: same function name, different behaviors
+
+<ul>
+<li>ad hoc polymorphism (function overloading)</li>
+<li>subtype polymorphism (function overwriting)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Steps</h2>
+
+<ol>
+<li>Handle Ambiguity</li>
+<li>Define the Core Objects</li>
+<li>Analyze Relationships</li>
+<li>Investigate Actions</li>
+</ol>
+
+
+<h2>Design Pattern</h2>
+
+<ul>
+<li>Singleton Class</li>
+<li>Factory Method</li>
+</ul>
+
+
+<h1>System Design</h1>
+
+<h2>Design of a Data Query Service</h2>
+
+<p>Data storage:</p>
+
+<ul>
+<li>text files</li>
+<li>in XML or JSON format</li>
+<li>in a relational database</li>
+<li>in a distributed file system</li>
+</ul>
+
+
+<p>Interface
+&ndash; let clients send query strings (regex, xpath, sql, hive)
+&ndash; implement a web interface to support limited queries</p>
+
+<h2>Issues with distributed systems</h2>
+
+<ul>
+<li>smart division of data</li>
+<li>reduce machine jumps</li>
+<li>for search: use a bit vector or hashtable to mark visited nodes</li>
+<li>influence of server failure</li>
+<li>take advantage of cache</li>
+</ul>
+
+</div>
+
+<div class="meta">
 	
-
-
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-common-java-apis/">Condensed Notes: Common Java APIs</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
+</div>
 </article>
 
-
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-algorithms/">Condensed Notes: Algorithms</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
-</article>
-
-
 	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-scalability/">Condensed Notes: Scalability</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
-</article>
-
-
+	<a class="addthis_button_tweet"></a>
 	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-java-keywords/">Condensed Notes: Do You Know All Java Keywords?</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
-</article>
-
-
 	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-oo-design-and-system-design/">Condensed Notes: OO Design and System Design</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
+	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-</article>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
-
-	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/12/12/condensed-notes-bit-manipulation-and-mathematics/">Condensed Notes: Bit Manipulation and Mathematics</a></h2>
-	<div class="meta">
-		<span class="date">Dec 12</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
-</article>
-
-
-	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/10/23/condensed-notes-data-structures/">Condensed Notes: Data Structures</a></h2>
-	<div class="meta">
-		<span class="date">Oct 23</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
-</article>
-
-
-	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/08/20/rake-aborted-error-when-running-rake-generate-after-ubuntu-reboot/">Rake Aborted Error When Running Rake Generate After Ubuntu Reboot</a></h2>
-	<div class="meta">
-		<span class="date">Aug 20</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/octopress/'>Octopress</a>
-
-
-</span>
-	    
-	</div>
-</article>
-
-
-	
-
-
-<article>
-  <h2 class="title"><a href="/blog/2013/08/19/hello-world/">Hello World!</a></h2>
-	<div class="meta">
-		<span class="date">Aug 19</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/nao-re/'>脑热</a>
-
-
-</span>
-	    
-	</div>
-</article>
 
 
     </div>

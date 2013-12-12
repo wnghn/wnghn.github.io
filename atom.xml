@@ -4,7 +4,7 @@
   <title><![CDATA[王晗 Han Wang's Blog]]></title>
   <link href="http://wnghn.github.io/atom.xml" rel="self"/>
   <link href="http://wnghn.github.io/"/>
-  <updated>2013-11-15T11:30:35+01:00</updated>
+  <updated>2013-12-12T22:58:55+01:00</updated>
   <id>http://wnghn.github.io/</id>
   <author>
     <name><![CDATA[Han 晗 WANG]]></name>
@@ -14,10 +14,525 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Course Notes: Data Structures and Algorithms]]></title>
-    <link href="http://wnghn.github.io/blog/2013/10/23/course-notes-data-structures-and-algorithms/"/>
+    <title type="html"><![CDATA[Condensed Notes: Common Java APIs]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-common-java-apis/"/>
+    <updated>2013-12-12T20:08:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-common-java-apis</id>
+    <content type="html"><![CDATA[<h1>Interfaces</h1>
+
+<p><a href="http://stackoverflow.com/questions/2860977/standard-interfaces">Standard Interfaces</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: Algorithms]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-algorithms/"/>
+    <updated>2013-12-12T16:19:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-algorithms</id>
+    <content type="html"><![CDATA[<h1>Sort</h1>
+
+<ul>
+<li>internal sort
+
+<ul>
+<li>insert sort (stable), bubble sort(stable), selection sort(ustable)</li>
+<li>shell sort(unstable)</li>
+<li>quick sort(unstable), merge sort(stable), heap sort(unstable)</li>
+<li>bucket sort(stable, linear runtime for linear range), radix sort(stable)</li>
+</ul>
+</li>
+<li>external sort
+
+<ul>
+<li>winner&rsquo;s tree</li>
+</ul>
+</li>
+</ul>
+
+
+<blockquote><ul>
+<li>merge intervals</li>
+</ul>
+</blockquote>
+
+<h1>Search</h1>
+
+<ul>
+<li>Binary Search</li>
+<li><p>Top K Element (Quick Selection)</p>
+
+<blockquote><ul>
+<li>Median of Two Sorted Arrays</li>
+</ul>
+</blockquote></li>
+<li><p>BFS</p></li>
+</ul>
+
+
+<h1>Simple recursive algorithms</h1>
+
+<p>Solve problems that can be solved by a simple iteration.
+&ndash; Tail Call Optimization</p>
+
+<h1>Backtracking algorithms (DFS)</h1>
+
+<h2>Target: any single solution</h2>
+
+<ol>
+<li>Tests to see if a solution has been found, and if so, return it</li>
+<li>For each choice</li>
+<li>make the choice</li>
+<li>recur</li>
+<li>if the recursion finds a solution, return it</li>
+<li>unset the choice</li>
+<li>return failure if no choice remains</li>
+</ol>
+
+
+<h2>Target: all possible solutions</h2>
+
+<ol>
+<li>Tests to see if a solution has been found, and if so, add it to the solution set</li>
+<li>For each choice</li>
+<li>make the choice</li>
+<li>recur</li>
+<li>unset the choice</li>
+</ol>
+
+
+<blockquote><ul>
+<li>8 Queens</li>
+<li>word in a char matrix</li>
+<li>permutation</li>
+<li>distinct paths in a directed graph (break a long string into words and print all solutions)</li>
+<li>find all unique combinations in a set of numbers where the candidate numbers sums to a target value</li>
+<li>Letter Combinations of a Phone Number</li>
+</ul>
+</blockquote>
+
+<h1>Divide and conquer algorithms</h1>
+
+<ol>
+<li>Divide the problem into smaller subproblems of the same type, and solve these subproblems recursively</li>
+<li>Combine the solutions to the subproblems into a solution to the original problem</li>
+</ol>
+
+
+<p>Solve problems that are composed of nonoverlapping subproblems</p>
+
+<blockquote><ul>
+<li>Quick Sort</li>
+<li>Merge Sort</li>
+</ul>
+</blockquote>
+
+<h1>Dynamic programming algorithms</h1>
+
+<p>Requirement: an induction equation</p>
+
+<ul>
+<li>overlapping subproblems</li>
+<li>optimal substructure</li>
+</ul>
+
+
+<p>Steps:</p>
+
+<ul>
+<li>Top-down (recurrsion with memorization)</li>
+<li>Bottom-up</li>
+</ul>
+
+
+<blockquote><ul>
+<li>Pascal&rsquo;s triangle.</li>
+<li>How many possible unique paths are there from the top left corner of a grid to the bottom right corner?</li>
+<li>The path with the minmum sum in a m x n grid</li>
+<li>whether a long string is breakable into valid words</li>
+</ul>
+</blockquote>
+
+<h1>Greedy algorithms</h1>
+
+<blockquote><ul>
+<li>Suppose you want to count out a certain amount of money, using the fewest possible bills and coins</li>
+<li>which two vertical lines compose a container with the maximum volume?</li>
+<li>2 sum</li>
+</ul>
+</blockquote>
+
+<h1>Branch and bound algorithms</h1>
+
+<blockquote><ul>
+<li>Wildcard Matching</li>
+</ul>
+</blockquote>
+
+<h1>Brute force algorithms</h1>
+
+<p>Optimizations:
+&ndash; Heuristic: A “rule of thumb” that helps you decide which possibilities to look at first
+&ndash; Elimination</p>
+
+<h1>Randomized algorithms</h1>
+
+<h1>Trick: Replace Recursion by Iteration</h1>
+
+<p>Original Post: <a href="http://stackoverflow.com/questions/159590/way-to-go-from-recursion-to-iteration">Way to go from recursion to iteration</a></p>
+
+<p>Replacing the program stack by one of your own:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Stack&lt;Object&gt; stack;
+</span><span class='line'>stack.push(first_object);
+</span><span class='line'>while( !stack.isEmpty() ) {
+</span><span class='line'>   // Do something
+</span><span class='line'>   my_object = stack.pop();
+</span><span class='line'>
+</span><span class='line'>  // Push other objects on the stack.
+</span><span class='line'>
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>if you have more than one recursive call inside and you want to preserve the order of the calls, you have to add them in the reverse order to the stack:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>foo(first);
+</span><span class='line'>foo(second);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>has to be replaced by</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>stack.push(second);
+</span><span class='line'>stack.push(first);</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: Scalability]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-scalability/"/>
+    <updated>2013-12-12T16:16:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-scalability</id>
+    <content type="html"><![CDATA[<h1>Memory Limit with a Single Machine</h1>
+
+<ul>
+<li><p>replacement selection sorting</p>
+
+<blockquote><p>Given memory m, generate a sorted file of size 2m in average.</p></blockquote></li>
+<li><p>external merge sort (2-way, k-way merge with winner tree)</p></li>
+<li><p>block search with index table</p></li>
+</ul>
+
+
+<h1>Scalability with a Distributed System</h1>
+
+<h2>Steps to Solve Scalability Problem</h2>
+
+<ol>
+<li>solve it when there is no memory limits</li>
+<li>Split the data set</li>
+<li>by order of appearance, for time series</li>
+<li>by hash value, for independent entries</li>
+<li>by actual value, for geographically grouped entries</li>
+<li>arbitrarily, then maintain a lookup table</li>
+<li>Solve the problem on each machine, then merge the result</li>
+</ol>
+
+
+<h2>Issues</h2>
+
+<ul>
+<li>load balancing among machines</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: Do you know all java keywords?]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-java-keywords/"/>
+    <updated>2013-12-12T15:09:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-java-keywords</id>
+    <content type="html"><![CDATA[<h2>Primitive Data Types</h2>
+
+<ul>
+<li>byte, short, int, long</li>
+<li>float, double</li>
+<li>boolean</li>
+<li>char</li>
+</ul>
+
+
+<h2>Literals</h2>
+
+<ul>
+<li>true, false, null</li>
+</ul>
+
+
+<h2>flow control</h2>
+
+<ul>
+<li>if, else</li>
+<li>for, while, do</li>
+<li>break, continue, return</li>
+<li>switch, case, default</li>
+</ul>
+
+
+<h2>Class Declaration, Instantiation &amp; Inheritance</h2>
+
+<ul>
+<li>class, interface, enum</li>
+<li>extends, implements</li>
+<li>this, super</li>
+<li>new, instanceof</li>
+</ul>
+
+
+<h2>Method Declaration</h2>
+
+<ul>
+<li>void</li>
+<li>throws</li>
+</ul>
+
+
+<h2>Modifiers</h2>
+
+<ul>
+<li>For Class/Field/Method
+
+<ul>
+<li>public, protected, (none) and private (access by world, subclass, package, class)</li>
+<li>static (restricting to one instance)</li>
+<li>final (prohibiting value modification)</li>
+<li>Annotations</li>
+</ul>
+</li>
+<li>For Class/Method
+
+<ul>
+<li>strictfp (forcing strict floating point behavior)</li>
+<li>abstract (requiring override)</li>
+</ul>
+</li>
+<li>For Method Only
+
+<ul>
+<li>synchronized (preventing reentrancy)</li>
+<li>native (implementation in another programming language)</li>
+</ul>
+</li>
+<li>For Field Only
+
+<ul>
+<li>transient (not to be serialized)</li>
+<li>volatile</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Package</h2>
+
+<ul>
+<li>package, import</li>
+</ul>
+
+
+<h2>Exception &amp; Debugging</h2>
+
+<ul>
+<li>try, catch, finally</li>
+<li>throw</li>
+<li>assert (debugging aid)</li>
+</ul>
+
+
+<h2>Not Used</h2>
+
+<ul>
+<li>goto, const</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: OO Design and System Design]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-oo-design-and-system-design/"/>
+    <updated>2013-12-12T12:13:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-oo-design-and-system-design</id>
+    <content type="html"><![CDATA[<h1>OO Design</h1>
+
+<h2>4 Major Principles</h2>
+
+<ul>
+<li><strong>Abstraction</strong>: decomposing a complex system and hiding the complexity by defining the most semantically appropriate classes (states and behaviors)</li>
+<li><strong>Encapsulation</strong>: hiding data implementation by restricting access to accessor (getter) and
+mutator (setter)</li>
+<li><strong>Inheritance</strong>: the “is a” relationship</li>
+<li><strong>Polymorphism</strong>: same function name, different behaviors
+
+<ul>
+<li>ad hoc polymorphism (function overloading)</li>
+<li>subtype polymorphism (function overwriting)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Steps</h2>
+
+<ol>
+<li>Handle Ambiguity</li>
+<li>Define the Core Objects</li>
+<li>Analyze Relationships</li>
+<li>Investigate Actions</li>
+</ol>
+
+
+<h2>Design Pattern</h2>
+
+<ul>
+<li>Singleton Class</li>
+<li>Factory Method</li>
+</ul>
+
+
+<h1>System Design</h1>
+
+<h2>Design of a Data Query Service</h2>
+
+<p>Data storage:</p>
+
+<ul>
+<li>text files</li>
+<li>in XML or JSON format</li>
+<li>in a relational database</li>
+<li>in a distributed file system</li>
+</ul>
+
+
+<p>Interface
+&ndash; let clients send query strings (regex, xpath, sql, hive)
+&ndash; implement a web interface to support limited queries</p>
+
+<h2>Issues with distributed systems</h2>
+
+<ul>
+<li>smart division of data</li>
+<li>reduce machine jumps</li>
+<li>for search: use a bit vector or hashtable to mark visited nodes</li>
+<li>influence of server failure</li>
+<li>take advantage of cache</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: Bit Manipulation And Mathematics]]></title>
+    <link href="http://wnghn.github.io/blog/2013/12/12/condensed-notes-bit-manipulation-and-mathematics/"/>
+    <updated>2013-12-12T11:34:00+01:00</updated>
+    <id>http://wnghn.github.io/blog/2013/12/12/condensed-notes-bit-manipulation-and-mathematics</id>
+    <content type="html"><![CDATA[<h1>Bit Manipulation</h1>
+
+<ul>
+<li>Count number of 1s</li>
+</ul>
+
+
+<blockquote><p>The operation <code>c = c &amp; (c - 1)</code> will clear the least significant bit 1</p></blockquote>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>for (int count=0; c!=0; c=c & (c-1)) { 
+</span><span class='line'>  count++;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>even bits <code>x &amp; 0xaaaaaaaa</code> and odd bits <code>x &amp; 0x55555555</code></li>
+<li><p><code>x ^ x == 0</code></p>
+
+<blockquote><ul>
+<li>In an array, every number occurs twice except for one. Find out that single number.</li>
+</ul>
+</blockquote></li>
+<li><p>matrix problems</p></li>
+</ul>
+
+
+<blockquote><p>matrix elimination: Given an MX N matrix in which each row and each column is sorted in ascendingorder, write a method to find an element.</p></blockquote>
+
+<h1>Algebra</h1>
+
+<ul>
+<li>Greatest common factor and least common multiple</li>
+<li>Prime numbers
+
+<blockquote><p>divisibility</p></blockquote></li>
+</ul>
+
+
+<blockquote><p>checking for primality</p>
+
+<p>generate a list of primes</p></blockquote>
+
+<h1>Discrete Mathematics</h1>
+
+<ul>
+<li>combination</li>
+<li>permutation mathematics</li>
+<li><p>Catalan numbers
+$$C_0 = 1 \quad \text{and} \quad C<em>{n+1}=\sum</em>{i=0}^n C_i\,C<em>{n-i}\quad\text{for }n\ge 0.$$
+$$C_n = \frac{1}{n+1}{2n\choose n} = \frac{(2n)!}{(n+1)!\,n!} = \prod\limits</em>{k=2}^{n}\frac{n+k}{k} \qquad\mbox{ for }n\ge 0.$$</p></li>
+<li><p>C(n,m)=C(n-1,m-1)+C(n-1,m)</p></li>
+</ul>
+
+
+<h1>Probability Theory</h1>
+
+<ul>
+<li>Inclusion–exclusion principle</li>
+<li>Independence</li>
+<li>Bayes&#8217; theorem</li>
+</ul>
+
+
+<h1>Geometry</h1>
+
+<ul>
+<li>check whether a point is on a line</li>
+<li><p>Gift wrapping algorithm &amp;  Graham&rsquo;s Scan Algorithm</p>
+
+<blockquote><p>Convex hull (convex envelope), dot product of coordinate vector</p></blockquote></li>
+<li><p>precision problem (CGAL)</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Condensed Notes: Data Structures]]></title>
+    <link href="http://wnghn.github.io/blog/2013/10/23/condensed-notes-data-structures/"/>
     <updated>2013-10-23T14:44:00+02:00</updated>
-    <id>http://wnghn.github.io/blog/2013/10/23/course-notes-data-structures-and-algorithms</id>
+    <id>http://wnghn.github.io/blog/2013/10/23/condensed-notes-data-structures</id>
     <content type="html"><![CDATA[<h1>Linear Structures</h1>
 
 <h2>Phisical Implementations</h2>
@@ -63,15 +578,7 @@
 <h3>Sequential List (Array)</h3>
 
 <ul>
-<li>internal sort
-
-<ul>
-<li>insert sort (stable), bubble sort(stable), selection sort(ustable)</li>
-<li>shell sort(unstable)</li>
-<li>quick sort(unstable), merge sort(stable), heap sort(unstable)</li>
-<li>bucket sort(stable, linear runtime for linear range), radix sort(stable)</li>
-</ul>
-</li>
+<li>sort</li>
 <li>binary search</li>
 <li>dynamic programming
 
@@ -123,7 +630,7 @@
 <li>Valid parentheses</li>
 </ul>
 </blockquote></li>
-<li><p>substitute recursion (only when recursion is very space-inefficient)</p>
+<li><p>substitute recursion (only recommended when recursion is very space-inefficient)</p>
 
 <blockquote><ul>
 <li>Hanoi Tower</li>
@@ -131,6 +638,12 @@
 </blockquote></li>
 </ul>
 
+
+<blockquote><ul>
+<li>Generate all valid parentheses</li>
+<li>Simplify Unix File Path</li>
+</ul>
+</blockquote>
 
 <h3>Queue (FIFO)</h3>
 
@@ -152,7 +665,15 @@ A queues with fixed length can be viewed as a <strong>circular queue</strong>. A
 </ul>
 
 
+<h3>Skip List</h3>
+
 <h3>Hash Table</h3>
+
+<blockquote><ul>
+<li>Longest Consecutive Sequence</li>
+<li>Find out the line that passes through the most points</li>
+</ul>
+</blockquote>
 
 <h1>Tree Structures</h1>
 
@@ -367,29 +888,6 @@ A queues with fixed length can be viewed as a <strong>circular queue</strong>. A
 </blockquote></li>
 </ul>
 
-
-<h1>If Data can not fit into memory</h1>
-
-<ul>
-<li><p>replacement selection sorting</p>
-
-<blockquote><ul>
-<li>Given memory m, generate a sorted file of size 2m in average.</li>
-</ul>
-</blockquote></li>
-<li><p>external merge sort (2-way, k-way merge with winner tree)</p></li>
-<li><p>block search with index table</p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Notes of Java Basics]]></title>
-    <link href="http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics/"/>
-    <updated>2013-10-23T13:39:00+02:00</updated>
-    <id>http://wnghn.github.io/blog/2013/10/23/the-notes-of-java-basics</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   

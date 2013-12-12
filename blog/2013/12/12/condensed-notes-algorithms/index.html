@@ -1,0 +1,330 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Condensed Notes: Algorithms - 王晗 Han Wang's Blog</title>
+    <meta name="author" content="Han 晗 WANG">
+    
+	<meta name="description" content="Sort internal sort insert sort (stable), bubble sort(stable), selection sort(ustable)
+shell sort(unstable)
+quick sort(unstable), merge sort(stable), &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="王晗 Han Wang's Blog" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.ico" rel="shortcut icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+
+    <!-- remove or comment it to disable ajaxification -->   
+    <script src="/javascripts/ajaxify.js"></script>
+   
+    
+    
+
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <header id="header" class="inner"><!-- for more effects see _animate.scss -->
+<h1 class="animated bounceInDown">
+    <div id="headerbg">
+        Han 晗 WANG
+    </div>
+</h1>
+<br>
+
+<ul id="social-links" style="text-align:center">
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+
+<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
+<ul id="nav">
+	<li id="ajax"><a href="/index.html">Home</a></li>
+	<li id="ajax"><a href="/blog/archives/index.html">Archives</a></li>
+    <li id="ajaz"><a href="/atom.xml">RSS</a></li>
+    <li><a href="https://github.com/wnghn/wnghn.github.io">Source</a></li>
+    
+    <li>
+    <div id="dark">
+        <form method="get" action="/search.html" id="search">
+            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
+        </form>
+    </div>
+    </li>
+        
+</ul>
+
+
+
+
+</header>
+
+<div id="toload">
+<!-- begin toload --> 
+    <div id="content" class="inner">
+        <article class="post">
+	<h2 class="title">Condensed Notes: Algorithms</h2>
+	<div class="entry-content"><h1>Sort</h1>
+
+<ul>
+<li>internal sort
+
+<ul>
+<li>insert sort (stable), bubble sort(stable), selection sort(ustable)</li>
+<li>shell sort(unstable)</li>
+<li>quick sort(unstable), merge sort(stable), heap sort(unstable)</li>
+<li>bucket sort(stable, linear runtime for linear range), radix sort(stable)</li>
+</ul>
+</li>
+<li>external sort
+
+<ul>
+<li>winner&rsquo;s tree</li>
+</ul>
+</li>
+</ul>
+
+
+<blockquote><ul>
+<li>merge intervals</li>
+</ul>
+</blockquote>
+
+<h1>Search</h1>
+
+<ul>
+<li>Binary Search</li>
+<li><p>Top K Element (Quick Selection)</p>
+
+<blockquote><ul>
+<li>Median of Two Sorted Arrays</li>
+</ul>
+</blockquote></li>
+<li><p>BFS</p></li>
+</ul>
+
+
+<h1>Simple recursive algorithms</h1>
+
+<p>Solve problems that can be solved by a simple iteration.
+&ndash; Tail Call Optimization</p>
+
+<h1>Backtracking algorithms (DFS)</h1>
+
+<h2>Target: any single solution</h2>
+
+<ol>
+<li>Tests to see if a solution has been found, and if so, return it</li>
+<li>For each choice</li>
+<li>make the choice</li>
+<li>recur</li>
+<li>if the recursion finds a solution, return it</li>
+<li>unset the choice</li>
+<li>return failure if no choice remains</li>
+</ol>
+
+
+<h2>Target: all possible solutions</h2>
+
+<ol>
+<li>Tests to see if a solution has been found, and if so, add it to the solution set</li>
+<li>For each choice</li>
+<li>make the choice</li>
+<li>recur</li>
+<li>unset the choice</li>
+</ol>
+
+
+<blockquote><ul>
+<li>8 Queens</li>
+<li>word in a char matrix</li>
+<li>permutation</li>
+<li>distinct paths in a directed graph (break a long string into words and print all solutions)</li>
+<li>find all unique combinations in a set of numbers where the candidate numbers sums to a target value</li>
+<li>Letter Combinations of a Phone Number</li>
+</ul>
+</blockquote>
+
+<h1>Divide and conquer algorithms</h1>
+
+<ol>
+<li>Divide the problem into smaller subproblems of the same type, and solve these subproblems recursively</li>
+<li>Combine the solutions to the subproblems into a solution to the original problem</li>
+</ol>
+
+
+<p>Solve problems that are composed of nonoverlapping subproblems</p>
+
+<blockquote><ul>
+<li>Quick Sort</li>
+<li>Merge Sort</li>
+</ul>
+</blockquote>
+
+<h1>Dynamic programming algorithms</h1>
+
+<p>Requirement: an induction equation</p>
+
+<ul>
+<li>overlapping subproblems</li>
+<li>optimal substructure</li>
+</ul>
+
+
+<p>Steps:</p>
+
+<ul>
+<li>Top-down (recurrsion with memorization)</li>
+<li>Bottom-up</li>
+</ul>
+
+
+<blockquote><ul>
+<li>Pascal&rsquo;s triangle.</li>
+<li>How many possible unique paths are there from the top left corner of a grid to the bottom right corner?</li>
+<li>The path with the minmum sum in a m x n grid</li>
+<li>whether a long string is breakable into valid words</li>
+</ul>
+</blockquote>
+
+<h1>Greedy algorithms</h1>
+
+<blockquote><ul>
+<li>Suppose you want to count out a certain amount of money, using the fewest possible bills and coins</li>
+<li>which two vertical lines compose a container with the maximum volume?</li>
+<li>2 sum</li>
+</ul>
+</blockquote>
+
+<h1>Branch and bound algorithms</h1>
+
+<blockquote><ul>
+<li>Wildcard Matching</li>
+</ul>
+</blockquote>
+
+<h1>Brute force algorithms</h1>
+
+<p>Optimizations:
+&ndash; Heuristic: A “rule of thumb” that helps you decide which possibilities to look at first
+&ndash; Elimination</p>
+
+<h1>Randomized algorithms</h1>
+
+<h1>Trick: Replace Recursion by Iteration</h1>
+
+<p>Original Post: <a href="http://stackoverflow.com/questions/159590/way-to-go-from-recursion-to-iteration">Way to go from recursion to iteration</a></p>
+
+<p>Replacing the program stack by one of your own:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Stack&lt;Object&gt; stack;
+</span><span class='line'>stack.push(first_object);
+</span><span class='line'>while( !stack.isEmpty() ) {
+</span><span class='line'>   // Do something
+</span><span class='line'>   my_object = stack.pop();
+</span><span class='line'>
+</span><span class='line'>  // Push other objects on the stack.
+</span><span class='line'>
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>if you have more than one recursive call inside and you want to preserve the order of the calls, you have to add them in the reverse order to the stack:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>foo(first);
+</span><span class='line'>foo(second);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>has to be replaced by</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>stack.push(second);
+</span><span class='line'>stack.push(first);</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+<div class="meta">
+	
+</div>
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+    </div>
+    <footer id="footer">
+    <div style="display:inline">
+    Copyright &copy; 2013
+
+    Han 晗 WANG
+. Powered by <a href="http://octopress.org">Octopress</a> | 
+    Theme <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
+</div>
+
+
+    </footer>
+    <script src="/javascripts/fabric.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+<!-- end toload --> 
+</div>
+</div>
+<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
+/*]]>*/
+</script><!-- remove it to remove the scroll to top button -->
+</body>
+</html>

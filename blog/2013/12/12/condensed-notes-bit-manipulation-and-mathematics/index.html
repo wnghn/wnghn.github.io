@@ -3,10 +3,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>The Notes of Java Basics - 王晗 Han Wang's Blog</title>
+	<title>Condensed Notes: Bit Manipulation And Mathematics - 王晗 Han Wang's Blog</title>
     <meta name="author" content="Han 晗 WANG">
     
-	<meta name="description" content=" ">
+	<meta name="description" content="Bit Manipulation Count number of 1s The operation c = c &amp; (c - 1) will clear the least significant bit 1 1
+2
+3
+for (int count=0; c!=0; c=c & (c-1 &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -80,8 +83,83 @@
 <!-- begin toload --> 
     <div id="content" class="inner">
         <article class="post">
-	<h2 class="title">The Notes of Java Basics</h2>
-	<div class="entry-content">
+	<h2 class="title">Condensed Notes: Bit Manipulation and Mathematics</h2>
+	<div class="entry-content"><h1>Bit Manipulation</h1>
+
+<ul>
+<li>Count number of 1s</li>
+</ul>
+
+
+<blockquote><p>The operation <code>c = c &amp; (c - 1)</code> will clear the least significant bit 1</p></blockquote>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>for (int count=0; c!=0; c=c & (c-1)) { 
+</span><span class='line'>  count++;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>even bits <code>x &amp; 0xaaaaaaaa</code> and odd bits <code>x &amp; 0x55555555</code></li>
+<li><p><code>x ^ x == 0</code></p>
+
+<blockquote><ul>
+<li>In an array, every number occurs twice except for one. Find out that single number.</li>
+</ul>
+</blockquote></li>
+<li><p>matrix problems</p></li>
+</ul>
+
+
+<blockquote><p>matrix elimination: Given an MX N matrix in which each row and each column is sorted in ascendingorder, write a method to find an element.</p></blockquote>
+
+<h1>Algebra</h1>
+
+<ul>
+<li>Greatest common factor and least common multiple</li>
+<li>Prime numbers
+
+<blockquote><p>divisibility</p></blockquote></li>
+</ul>
+
+
+<blockquote><p>checking for primality</p>
+
+<p>generate a list of primes</p></blockquote>
+
+<h1>Discrete Mathematics</h1>
+
+<ul>
+<li>combination</li>
+<li>permutation mathematics</li>
+<li><p>Catalan numbers
+$$C_0 = 1 \quad \text{and} \quad C<em>{n+1}=\sum</em>{i=0}^n C_i\,C<em>{n-i}\quad\text{for }n\ge 0.$$
+$$C_n = \frac{1}{n+1}{2n\choose n} = \frac{(2n)!}{(n+1)!\,n!} = \prod\limits</em>{k=2}^{n}\frac{n+k}{k} \qquad\mbox{ for }n\ge 0.$$</p></li>
+<li><p>C(n,m)=C(n-1,m-1)+C(n-1,m)</p></li>
+</ul>
+
+
+<h1>Probability Theory</h1>
+
+<ul>
+<li>Inclusion–exclusion principle</li>
+<li>Independence</li>
+<li>Bayes&#8217; theorem</li>
+</ul>
+
+
+<h1>Geometry</h1>
+
+<ul>
+<li>check whether a point is on a line</li>
+<li><p>Gift wrapping algorithm &amp;  Graham&rsquo;s Scan Algorithm</p>
+
+<blockquote><p>Convex hull (convex envelope), dot product of coordinate vector</p></blockquote></li>
+<li><p>precision problem (CGAL)</p></li>
+</ul>
+
 </div>
 
 <div class="meta">
